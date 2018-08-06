@@ -1,0 +1,30 @@
+{
+  "version"    : "0.1",
+  "title"      : "CSS_kumihan_hon_preparation",
+  "summary"    : "C94 CSS組版をやりたい（準備号）",
+  "stylesheet" : "src/stylesheet.css",
+  "source"     : [
+    "src/pre.md",
+    "src/csspub.md",
+    "src/replace_wkhtmltopdf.md",
+    "src/update_erb.md",
+    "src/update_docker.md",
+    "src/something.md",
+    "src/pos.md"
+  ],
+  "option" : [
+    "-g",
+    "--page-width 182",
+    "--page-height 257",
+    "--margin-left 20mm",
+    "--margin-right 20mm",
+    "--margin-bottom 25mm",
+    "--margin-top 30mm"
+  ],
+  "template" : "template/default.erb",
+  "header"   : "template/header.html",
+  "footer"   : "template/footer.html",
+  "helper"   : "template/erb_helper.rb",
+  "out_dir"  : "output",
+  "tmp_dir"  : "tmp"
+}
